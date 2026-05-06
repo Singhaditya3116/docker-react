@@ -1,0 +1,13 @@
+FROM node:alpine
+
+WORKDIR /app
+
+COPY ./package.json .
+RUN npm install
+
+COPY . .
+
+CMD ["npm", "run", "dev"]
+
+# Command to run the dev server with HMR via docker volume
+# docker run -p 5173:5173 -v/app/node_modules -v "$(pwd):/app" 23305a6e24c5

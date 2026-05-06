@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "test": "vitest --watch",
+    "test": "vitest --run --coverage",
     "test:ui": "vitest --ui",
     "build": "vite build",
     "lint": "eslint .",

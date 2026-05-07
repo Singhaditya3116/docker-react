@@ -9,5 +9,5 @@ test('renders app', () => {
 
 test('renders app 2', () => {
   render(<App />)
-  expect(screen.getByText(/get started/i)).toBeInTheDocument()
+  expect(screen.getByText(/get started/i)).toBeInTheDocument();
 }) 
